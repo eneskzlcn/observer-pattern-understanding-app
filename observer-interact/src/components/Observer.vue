@@ -8,6 +8,7 @@
     </div>
 </div>
 
+
 </template>
 
 <script>
@@ -21,7 +22,7 @@ export default {
   },
   methods:{
     subcribe(){
-      this.$parent.data.notification_system.register_observer(this.observer);
+      //this.$parent.data.notification_system.register_observer(this.observer);
     },
     createObserver(name)
     {
@@ -42,7 +43,9 @@ export default {
   },
   data()
   {
-    observer: null;
+    return {
+      observer: null,
+    }
   },
   mounted()
   {

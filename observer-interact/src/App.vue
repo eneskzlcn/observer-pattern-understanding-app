@@ -1,9 +1,22 @@
 <template>
-  <div class="row">
-    <Observer msg="Instangram" img_path="insta_logo.png" observer_name="Instangram" />
-    <Observer msg="Facebook" img_path="face_logo.png" observer_name="Facebook" />
-    <Observer msg="Twitter" img_path="twitter_logo.png" observer_name="Twitter" />
-    <button class="btn btn-danger"></button>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <Observer msg="Instangram" img_path="insta_logo.png" observer_name="Instangram" />
+      </div>
+      <div class="col">
+        <Observer msg="Facebook" img_path="face_logo.png" observer_name="Facebook" />
+      </div>
+      <div class="col">
+        <Observer msg="Twitter" img_path="twitter_logo.png" observer_name="Twitter" />
+      </div>
+    </div>
+    <div class = "row">
+      <div class = "col"></div>
+      <div class = "col">
+        <button class="btn btn-danger" style="width:200px;heigth:200px;margin-top:20px;"> NOTIFY REGISTERED OBSERVERS</button>
+      </div>
+    </div>
   </div>
 </template>
 
